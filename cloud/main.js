@@ -11,7 +11,7 @@ var mqiniu=require('cloud/mqiniu');
 var mchat=require('cloud/mchat');
 
 var hello=require('cloud/test.js');
-AV.Cloud.define("hello", hello.hello);
+//AV.Cloud.define("hello", hello.hello);
 
 AV.Cloud.define("addFriend", muser.handleAddFriend);
 AV.Cloud.define("removeFriend", muser.handleRemoveFriend);
@@ -26,3 +26,6 @@ AV.Cloud.define("group_sign", msign.groupSign);
 
 AV.Cloud.define("_messageReceived",mchat.messageReceived);
 AV.Cloud.define("_receiversOffline",mchat.receiversOffline);
+AV.Cloud.define("hello", function(request,response){
+	response.success('hello world')
+});
