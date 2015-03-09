@@ -27,5 +27,5 @@ AV.Cloud.define("group_sign", msign.groupSign);
 AV.Cloud.define("_messageReceived",mchat.messageReceived);
 AV.Cloud.define("_receiversOffline",mchat.receiversOffline);
 AV.Cloud.define("hello", function(request,response){
-	response.success('hello world')
+	response.success('hello world1')
 });
