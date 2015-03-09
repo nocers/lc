@@ -1,9 +1,9 @@
-var hello = function(req,res){
-	var name = req.params.name;
+function hello(request,response){
+	var name = request.params.name;
 	if(name){
-		res.success('name'+'@@@'+name);
+		response.success('name'+'@@@'+name);
 	}else{
-		res.error('name?');
+		response.error('name?');
 	}
 }
 exports.hello=hello;
